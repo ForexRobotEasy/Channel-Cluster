@@ -1,0 +1,122 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                              Channel Cluster.mq5 |
+//|                             Copyright 2022, Forex Robot Easy Team |
+//|                                                  forexroboteasy.com |
+//+------------------------------------------------------------------+
+
+#property copyright 'Copyright 2022, Forex Robot Easy Team'
+#property link      'forexroboteasy.com'
+#property version   '1.00'
+#property description 'Channel Cluster - Forex trading tool'
+
+//+------------------------------------------------------------------+
+//| Custom indicator initialization function                         |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime &time[],
+                const double &open[],
+                const double &high[],
+                const double &low[],
+                const double &close[],
+                const long &tick_volume[],
+                const long &volume[],
+                const int &spread[])
+{
+    // Add calculation code here
+
+    return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator drawing function                                |
+//+------------------------------------------------------------------+
+int OnChartEvent(const int id,
+                 const long &lparam,
+                 const double &dparam,
+                 const string &sparam)
+{
+    // Add drawing code here
+
+    return(0);
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading function for implementing Cluster Indicator        |
+//+------------------------------------------------------------------+
+void ClusterIndicator()
+{
+    // Add code for Cluster Indicator here
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading function for placing trades                        |
+//+------------------------------------------------------------------+
+void PlaceTrade()
+{
+    // Add code for placing trades here
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading function for managing trades                       |
+//+------------------------------------------------------------------+
+void ManageTrade()
+{
+    // Add code for managing trades here
+}
+
+//+------------------------------------------------------------------+
+//| Custom trading function for closing trades                        |
+//+------------------------------------------------------------------+
+void CloseTrade()
+{
+    // Add code for closing trades here
+}
+
+//+------------------------------------------------------------------+
+//| Expert Advisor start function                                     |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    ClusterIndicator();
+    PlaceTrade();
+    ManageTrade();
+    CloseTrade();
+}
+
+//+------------------------------------------------------------------+
+//| Expert Advisor initialization function                           |
+//+------------------------------------------------------------------+
+int OnInitExpert()
+{
+    // Add initialization code here
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert Advisor deinitialization function                         |
+//+------------------------------------------------------------------+
+void OnDeinitExpert()
+{
+    // Add deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//| Expert Advisor stop function                                      |
+//+------------------------------------------------------------------+
+void OnStop()
+{
+    // Add code to stop the Expert Advisor here
+}
